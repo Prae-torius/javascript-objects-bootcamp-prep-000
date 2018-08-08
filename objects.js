@@ -1,10 +1,10 @@
 var playlist = {Muse: 'Something Human'};
 
-function updatePlaylist(obj, artist, song) {
+function updatePlaylist(playlist, artist, song) {
   return Object.assign({}, obj,{ [artist]: song });
 }
 
-function removeFromPlaylist(obj, artist){
+function removeFromPlaylist(playlist, artist){
   delete playlist.artist;
   return playlist;
 }
